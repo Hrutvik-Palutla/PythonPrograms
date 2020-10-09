@@ -17,7 +17,7 @@ def calculator():
     while operation >= 5:
         while True:
             try:
-                print("Error 19a3 - You have entered an operation number. Please enter only a option number.")
+                print("Error 19a3 - You have entered an unrecognizable operation number. Please enter only a option number.")
                 operation = (input("Enter the operation number as mentioned above for the operation:"))
                 operation = int(operation)
                 break
