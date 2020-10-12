@@ -67,13 +67,15 @@ def calculator():
         while num2 == 0:
             while True:
                 try:
-                    print("Error 19e - You have entered a zero for the divisor. Please enter the divisor again.")
-                    num2 = (input("Enter second number:"))
+                    if ValueError and num2 != 0:
+                        print("Error 19c - You have entered a unrecognizable value. Please enter only a float value.")
+                    else:
+                        print("Error 19e - You have entered a zero for the divisor. Please enter the divisor again.")
+                    num2 = (input("Enter the divisor:"))
                     num2 = float(num2)
                     break
                 except ValueError:
-                    print("Error 19c - You have entered a unrecognizable value. Please enter only an float value.")
-        quotient_value = num1 / num2
+                    pass
         quotient = round(quotient_value, 3)
         print("The quotient, rounded to three decimal places, is", quotient)
 
