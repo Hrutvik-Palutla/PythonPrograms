@@ -11,24 +11,24 @@ def lcm_hcf_calculator():
             number1 = input("Enter the first number:")
             number1 = int(number1)
             while number1 <= 0:
-                print("Error - Please enter only a natural number, and not a float value, zero or negative integer.")
+                print("Error 2c - You have entered an invalid value. Please enter only a postive integer, not including zero and float values.")
                 number1 = input("Enter the first number:")
                 number1 = int(number1)
             break
         except ValueError:
-            print("Error - You have entered an unrecognizable value. Please enter only a natural number.")
+            print("Error 2c - You have entered an invalid value. Please enter only a postive integer, not including zero and float values.")
     while True: #For second number
         try:
             global number2
             number2 = input("Enter the second number:")
             number2 = int(number2)
             while number2 <= 0:
-                print("Error - Please enter only a natural number, and not a float value, zero or negative integer.")
+                print("Error 2c - You have entered an invalid value. Please enter only a postive integer, not including zero and float values.")
                 number2 = input("Enter the second number:")
                 number2 = int(number2)
             break
         except ValueError:
-            print("Error - You have entered an unrecognizable value. Please enter only a natural number.")
+            print("Error 2c - You have entered an invalid value. Please enter only a postive integer, not including zero and float values.")
     print("Processing...")
     from time import sleep
     sleep(0.5)
@@ -50,10 +50,11 @@ def lcm_hcf_calculator():
                     hcf = try_number
                     break
         else: #If the computer has lost its mind
-            print("Error - Unknown exception. A problem has occurred.")
+            print("Error 1 - Unknown exception. A problem has occurred.")
     hcf_processor()
     def lcm_processor(): #For processing LCM
         lcm = (number1 * number2)/hcf
+        lcm = int(lcm)
         print("The LCM of the two numbers", number1, "and", number2, "is", str(lcm) + ".")
     lcm_processor()
 lcm_hcf_calculator()
@@ -67,7 +68,6 @@ while True: #Rerun command
             print("Thank you for using the calculator.")
             break
         else:
-            print("Error - Invalid input. Please enter only yes or no.")
+            print("Error 5 - Invalid input. Please enter only yes or no.")
     except Exception:
-        print("Error - Unknown exception. A problem has occurred.")
-
+        print("Error 1 - Unknown exception. A problem has occurred.")

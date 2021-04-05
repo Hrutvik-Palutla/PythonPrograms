@@ -1,0 +1,9 @@
+Error 1 : Unknown exception. A problem has occured.
+Error 2a : You have entered a unrecognizable value. Please enter only an integer value.
+Error 2b : You have entered a unrecognizable value. Please enter only an float value.
+Error 2c : You have entered an invalid value. Please enter only a postive/negative integer, not including zero and float values. (Choose as required)
+Error 3 : You have entered a unrecognizable value. Please enter only an option/function number. (Choose as required)
+Error 4a : The value you have entered is not in the array/list/dictionary/set. (Choose as required)
+Error 4b : The Value you have entered is in the array/list/dictionary/set.
+Error 5 : Invalid input. Please enter only '_______' or '________'. (Adjust as required)
+Error 6: You have entered zero as the divisor. Division by zero is not defined. Please enter a valid value.
