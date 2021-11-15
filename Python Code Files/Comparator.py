@@ -37,5 +37,3 @@ while True:
             print("Error 5 - Invalid input. Please enter only yes or no.")
     except Exception:
         print("Error 1 - Unknown exception. A problem has occurred.")
-
-
